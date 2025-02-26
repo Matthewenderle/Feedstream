@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 649.89 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe5701;
+      }
+
+      .cls-2 {
+        fill: #333;
+        font-family: Quantify-Bold, Quantify;
+        font-size: 95.16px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        fill: #f5e203;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        fill: #faa50a;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M72.86,0c2.85,0,5.72,0,8.57,0,12.85.02,25.73-.02,38.57,0l-31.79,32.13H0V0C24.27.03,48.58-.02,72.86,0Z"/>
+    <polygon class="cls-7" points="76.43 43.58 43.93 76.43 0 76.43 0 43.58 76.43 43.58"/>
+    <polygon class="cls-5" points="32.86 87.15 0 120 0 87.15 32.86 87.15"/>
+  </g>
+  <text class="cls-2" transform="translate(144 90.26) scale(1.04 1)"><tspan class="cls-6" x="0" y="0">F</tspan><tspan class="cls-3" x="44.34" y="0">eedst</tspan><tspan class="cls-4" x="277.29" y="0">r</tspan><tspan x="304.7" y="0">eam</tspan></text>
+</svg>
