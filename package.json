@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "feedstream",
   "private": true,
   "type": "module",
   "scripts": {
