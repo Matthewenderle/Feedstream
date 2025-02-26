@@ -24,8 +24,19 @@
         </div>
       </div>
       <div class="hidden gap-x-10 lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900 dark:text-gray-400"
-          >Log in <span aria-hidden="true">&rarr;</span></a
+        <NuxtLink
+          v-if="!useAuthentication().user"
+          to="/auth/login/"
+          class="text-sm/6 font-semibold text-gray-900 dark:text-gray-400"
+          >Log in <span aria-hidden="true">&rarr;</span></NuxtLink
+        >
+        <a
+          v-if="useAuthentication().user"
+          href="#"
+          class="text-sm/6 font-semibold text-gray-900 dark:text-gray-400"
+          @click="useAuthStore().signOut()"
+        >
+          Log out <span aria-hidden="true">&rarr;</span></a
         >
         <div class="hidden justify-center rounded-md text-gray-700 dark:text-gray-400 lg:inline-flex">
           <UiColorModeToggle />
