@@ -1,0 +1,8 @@
+components.d.ts
+nuxt.d.ts
+dist
+.nuxt
+.output
+.bak
+supabase/email-templates/*
+migrations/*
