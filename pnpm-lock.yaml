@@ -17,6 +17,10 @@ importers:
       vue-router:
         specifier: latest
         version: 4.5.0(vue@3.5.13(typescript@5.7.3))
+    devDependencies:
+      openssl-self-signed-certificate:
+        specifier: ^1.1.6
+        version: 1.1.6
 
 packages:
 
@@ -2146,6 +2150,9 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: ^5.x
+
+  openssl-self-signed-certificate@1.1.6:
+    resolution: {integrity: sha512-OJpqrdIYir5DznRSChodZqvpOx2fsT6sNA4PD9kYOMkIPgjfNYTWDzgac0drm+ZR0yI5Un7tE8bsmP1nZpx23Q==}
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
@@ -5536,6 +5543,8 @@ snapshots:
       supports-color: 9.4.0
       typescript: 5.7.3
       yargs-parser: 21.1.1
+
+  openssl-self-signed-certificate@1.1.6: {}
 
   package-json-from-dist@1.0.1: {}
 
