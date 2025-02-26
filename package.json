@@ -31,7 +31,8 @@
     "pinia-plugin-persistedstate": "^4.1.3",
     "prettier": "^3.4.2",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vue3-toastify": "^0.2.8"
   },
   "devDependencies": {
     "openssl-self-signed-certificate": "^1.1.6",
