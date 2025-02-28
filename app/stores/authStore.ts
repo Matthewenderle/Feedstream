@@ -14,6 +14,7 @@ export const useAuthStore = defineStore('auth', {
     session: null as Session | null,
     profile: { profile_id: '', email: '', first_name: null, last_name: null, onboarded: false } as Profile,
     listenerInitialized: false as boolean,
+    redirectUrl: null as string | null,
   }),
   persist: true,
   getters: {
@@ -70,9 +71,10 @@ export const useAuthStore = defineStore('auth', {
     async signOut() {
       console.debug('Signing out user');
       const supabase = useSupabaseClient();
-      await supabase.auth.signOut();
+      supabase.auth.signOut();
       this.session = null;
-      return useRouter().push('/auth/login');
+      return navigateTo('/auth/login');
+      // return useRouter().push('/auth/login');
     },
     async getProfile() {
       const supabase = useSupabaseClient();

@@ -27,6 +27,6 @@ onMounted(() => {
   console.debug(isNotOnboarded());
   console.debug(user.value);
 
-  return navigateTo('/');
+  return navigateTo(useAuthStore().redirectUrl ? useAuthStore().redirectUrl : '/');
 });
 </script>
