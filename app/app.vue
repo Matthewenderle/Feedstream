@@ -37,7 +37,7 @@ onMounted(() => {
       case 'SIGNED_OUT':
         useAuthStore().session = null;
         console.debug('User signed out');
-        useRouter().push('/auth/debugin');
+        useRouter().push('/auth/login');
         break;
 
       case 'TOKEN_REFRESHED':
