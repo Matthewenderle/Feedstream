@@ -11,7 +11,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "generateCerts": "node ./scripts/generateSSLCert.js"
+    "generateCerts": "node ./scripts/generateSSLCert.js",
+    "supabaseTypes": "supabase gen types typescript --db-url \"postgres://postgres:postgres@localhost:54322/postgres\" > types/supabase.d.ts"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
