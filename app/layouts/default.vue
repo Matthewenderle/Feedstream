@@ -3,7 +3,7 @@
     <AppLayoutMobileNav :navigation="navigation" :sidebarOpen="sidebarOpen" @toggleSidebar="toggleSidebarEmit" />
     <AppLayoutDesktopNav :navigation="navigation" @toggleSidebar="toggleSidebarEmit" />
 
-    <div class="lg:pl-72">
+    <div class="">
       <main class="py-10">
         <div class="px-4 sm:px-6 lg:px-8">
           <NuxtPage />
@@ -15,7 +15,7 @@
 
 <script setup>
 const navigation = ref([
-  { name: 'Feature Requests', href: '#', icon: 'heroicons:light-bulb', current: false },
+  { name: 'Feature Requests', href: '/feature', icon: 'heroicons:light-bulb', current: false },
   { name: 'Roadmap', href: '#', icon: 'heroicons:map', current: false, badge: 'Soon' },
   { name: 'Changelog', href: '#', icon: 'heroicons:wrench', current: false, badge: 'Soon' },
 ]);
