@@ -20,18 +20,20 @@
       <div class="hidden lg:flex lg:gap-x-12">
         <div v-for="item in navigation" :key="item.name" class="flex items-center gap-x-2">
           <icon :name="item.icon" class="size-6 shrink-0 dark:text-gray-100" aria-hidden="true" />
-          <a :href="item.href" class="text-sm/6 font-semibold text-gray-900 dark:text-gray-100">{{ item.name }}</a>
+          <NuxtLink :to="item.href" class="text-sm/6 font-semibold text-gray-900 dark:text-gray-100">{{
+            item.name
+          }}</NuxtLink>
         </div>
       </div>
       <div class="hidden gap-x-10 lg:flex lg:flex-1 lg:justify-end">
         <NuxtLink
-          v-if="!useAuthentication().user"
+          v-if="!useAuthStore().isTokenValid"
           to="/auth/login/"
           class="text-sm/6 font-semibold text-gray-900 dark:text-gray-400"
           >Log in <span aria-hidden="true">&rarr;</span></NuxtLink
         >
         <a
-          v-if="useAuthentication().user"
+          v-if="useAuthStore().isTokenValid"
           href="#"
           class="text-sm/6 font-semibold text-gray-900 dark:text-gray-400"
           @click="useAuthStore().signOut()"
