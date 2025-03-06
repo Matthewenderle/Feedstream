@@ -40,3 +40,64 @@ pre {
 .field-border {
   @apply field-base focus:outline-none checked:border-gray-500 border-2;
 }
+
+// Feature List Items
+.feature-item {
+  @apply flex flex-col rounded-xl border  dark:border-neutral-700;
+
+  .header {
+    @apply flex flex-row;
+
+    .title {
+      @apply text-black dark:text-neutral-200 text-lg font-bold ml-4 mt-4 hover:underline;
+    }
+
+    .description {
+      @apply text-gray-500 dark:text-neutral-400 ml-4 my-2;
+    }
+
+    .aside {
+      @apply flex flex-col items-center justify-center border-l dark:border-neutral-700 px-6 hover:bg-neutral-100 hover:dark:bg-neutral-700/50 hover:cursor-pointer;
+
+      icon {
+        @apply text-2xl font-extrabold text-gray-500 dark:text-red-400;
+      }
+
+      .votes {
+        @apply text-xl font-bold text-gray-900 dark:text-gray-400;
+      }
+    }
+  }
+
+  .divider {
+    @apply m-0  dark:border-neutral-700 border-t;
+  }
+
+  .footer {
+    @apply text-gray-500 justify-between dark:text-neutral-400 pt-1 flex flex-row  ml-4 mt-2 mb-4;
+
+    .author {
+      @apply text-sm font-semibold flex;
+    }
+
+    .date {
+      @apply flex pl-2 text-sm text-gray-600 dark:text-gray-400;
+    }
+
+    .comments {
+      @apply flex pl-6 text-sm text-gray-600 dark:text-gray-400;
+
+      .icon {
+        @apply font-extrabold align-bottom text-gray-500 dark:text-neutral-200 px-2;
+      }
+
+      .count {
+        @apply text-sm font-semibold text-gray-900 dark:text-gray-400 ml-1;
+      }
+    }
+
+    .status {
+      @apply flex justify-end text-sm font-semibold  mr-4;
+    }
+  }
+}

@@ -34,7 +34,9 @@
         type="button"
         class="focus:outline-hidden relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400"
       >
-        <span class="mt-2 block text-sm font-semibold text-gray-900">There are no Feature Requests found</span>
+        <span class="mt-2 block text-sm font-semibold text-gray-900 dark:text-neutral-200"
+          >There are no Feature Requests found</span
+        >
       </button>
     </div>
     {{ statusSelect }}
