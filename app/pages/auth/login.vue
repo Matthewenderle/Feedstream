@@ -1,12 +1,12 @@
 <template>
   <div class="sm:mx-auto sm:w-full sm:max-w-md">
-    <h2 class="mt-6 text-center text-2xl/9 font-bold tracking-tight text-gray-900 dark:text-white">
+    <h2 class="mt-6 text-center text-2xl/9 font-bold tracking-tight text-gray-900 dark:text-gray-200">
       Sign in to your account
     </h2>
   </div>
 
   <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-    <div class="bg-white px-6 py-12 shadow-sm ring-1 ring-gray-200 dark:bg-neutral-900 sm:rounded-lg sm:px-12">
+    <div class="card-border">
       <TailwindStaticAlert :alert="alert" />
       <form class="space-y-6">
         <div>
@@ -20,7 +20,7 @@
               id="email"
               autocomplete="email"
               required=""
-              class="block w-full rounded-md bg-gray-100 px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 ring-1 ring-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600 dark:bg-neutral-800 dark:text-white sm:text-sm/6"
+              class="field"
             />
           </div>
         </div>
@@ -36,7 +36,7 @@
               id="password"
               autocomplete="current-password"
               required=""
-              class="block w-full rounded-md bg-gray-100 px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 ring-1 ring-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600 dark:bg-neutral-800 dark:text-white sm:text-sm/6"
+              class="field"
             />
           </div>
         </div>

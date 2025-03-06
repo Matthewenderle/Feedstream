@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white dark:bg-neutral-900">
+  <header class="sticky inset-x-0 top-0 border-b bg-white dark:border-neutral-700 dark:bg-neutral-800">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <NuxtLink to="/" class="">

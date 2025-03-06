@@ -1,6 +1,8 @@
 <template>
   <div class="sm:mx-auto sm:w-full sm:max-w-7xl">
-    <div class="bg-white px-6 py-12 shadow-sm ring-1 ring-gray-200 dark:bg-neutral-900 sm:rounded-lg sm:px-6">
+    <div class="card-border">
+      <h1 class="card-title">Feature Requests</h1>
+      <span class="card-subtitle">View and Interact with Feature Requests</span>
       <div class="flex justify-between py-4">
         <div class="flex gap-x-4">
           <input
@@ -9,7 +11,7 @@
             id="searchInput"
             aria-label="Search"
             v-model="searchInput"
-            class="block w-full rounded-md bg-gray-100 px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600 sm:text-sm/6"
+            class="field"
             placeholder="Search"
           />
           <FeatureStatusComboSelect @select-option="statusSelectEmit" />
@@ -95,3 +97,5 @@ const createRequest = () => {
   return useRouter().push(useAuthStore().isTokenValid ? '/feature/create' : '/auth/login');
 };
 </script>
+
+<style lang="scss" scoped></style>

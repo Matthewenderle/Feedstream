@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow-sm ring-1 ring-gray-200 dark:bg-neutral-900 sm:rounded-lg">
+  <div class="sm:rounded-lg">
     <div class="flex flex-row px-4 py-4 sm:px-6">
       <!-- Top half content -->
       <div class="flex-1">

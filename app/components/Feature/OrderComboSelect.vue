@@ -1,13 +1,8 @@
 <template>
-  <Combobox
-    as="div"
-    v-model="selectedOption"
-    @update:modelValue="query = ''"
-    class="w-full text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600 sm:text-sm/6"
-  >
+  <Combobox as="div" v-model="selectedOption" @update:modelValue="query = ''" class="w-full">
     <div class="relative">
       <ComboboxInput
-        class="block w-full rounded-md bg-gray-100 py-1.5 pl-3 pr-12 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:bg-white focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600 sm:text-sm/6"
+        class="field"
         @change="query = $event.target.value"
         @blur="query = ''"
         placeholder="Newest"
@@ -17,10 +12,7 @@
         <ChevronUpDownIcon class="size-5 text-gray-400" aria-hidden="true" />
       </ComboboxButton>
 
-      <ComboboxOptions
-        v-if="filteredOptions.length > 0"
-        class="focus:outline-hidden absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 sm:text-sm"
-      >
+      <ComboboxOptions v-if="filteredOptions.length > 0" class="field-select-options">
         <ComboboxOption
           v-for="status in filteredOptions"
           :key="status"
@@ -31,7 +23,7 @@
           <li
             :class="[
               'relative cursor-default py-2 pr-9 pl-3 select-none',
-              active ? 'bg-gray-400 text-white outline-hidden' : 'text-gray-900',
+              active ? 'bg-gray-400 text-white outline-hidden' : 'text-gray-200',
             ]"
           >
             <span :class="['block truncate', selected && 'font-semibold']">

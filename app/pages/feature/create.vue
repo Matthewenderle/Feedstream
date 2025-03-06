@@ -1,8 +1,8 @@
 <template>
-  <div class="sm:mx-auto sm:w-full sm:max-w-xl">
-    <div class="bg-white px-6 pb-12 pt-4 shadow-sm ring-1 ring-gray-200 dark:bg-neutral-900 sm:rounded-lg sm:px-6">
-      <h3 class="text-base font-semibold text-gray-900">Create new Request</h3>
-      <div class="flex justify-between py-4">test</div>
+  <div class="sm:mx-auto sm:w-full sm:max-w-7xl">
+    <div class="card-border">
+      <h3 class="card-title">Create new Request</h3>
+      <span class="card-subtitle">Request a new feature to be considered for development</span>
     </div>
   </div>
 </template>

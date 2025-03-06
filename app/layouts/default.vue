@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-neutral-900">
+  <div class="">
     <AppLayoutMobileNav :navigation="navigation" :sidebarOpen="sidebarOpen" @toggleSidebar="toggleSidebarEmit" />
     <AppLayoutDesktopNav :navigation="navigation" @toggleSidebar="toggleSidebarEmit" />
 
@@ -36,3 +36,5 @@ onMounted(() => {
   setActive();
 });
 </script>
+
+<style scoped></style>

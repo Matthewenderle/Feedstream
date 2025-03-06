@@ -1,0 +1,42 @@
+.bg-primary {
+  background-color: #171717;
+}
+
+pre {
+  @apply pt-8 text-xs uppercase text-gray-500 dark:text-neutral-500;
+}
+
+.card-border {
+  @apply rounded-xl border bg-white border-gray-200 px-6 py-12 
+  dark:border-gray-700 dark:bg-neutral-800 sm:rounded-lg sm:px-6;
+}
+
+.card-title {
+  @apply text-xl font-semibold text-gray-800 dark:text-neutral-200;
+}
+
+.card-subtitle {
+  @apply text-sm text-gray-600 dark:text-neutral-400;
+}
+
+.field-base {
+  @apply py-2 ps-2 pe-2 block w-full bg-gray-100 rounded-lg 
+  text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 
+  disabled:pointer-events-none dark:bg-neutral-800 dark:border-gray-700
+   dark:text-neutral-400 dark:placeholder:text-neutral-400 
+   dark:focus:ring-neutral-600 border;
+}
+
+.field-select-options {
+  @apply dark:bg-neutral-600 absolute sm:text-sm
+  z-10 mt-1 max-h-60 w-full overflow-auto rounded-md py-1
+  text-base shadow-lg ring-1 ring-black/5 dark:text-neutral-200;
+}
+
+.field {
+  @apply field-base focus:outline-none;
+}
+
+.field-border {
+  @apply field-base focus:outline-none checked:border-gray-500 border-2;
+}

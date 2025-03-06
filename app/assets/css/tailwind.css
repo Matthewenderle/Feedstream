@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-light: #848466; /* Replace with your light mode color */
+  --primary-dark: #442211; /* Replace with your dark mode color */
+}
+
+.dark {
+  --primary-light: #442211; /* Replace with your dark mode color */
+  --primary-dark: #848466; /* Replace with your light mode color */
+}
+
+@layer components {
+}
+
+@layer base {
+  :root {
+    --primary: var(--primary-light);
+  }
+
+  .dark {
+    --primary: var(--primary-dark);
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white dark:bg-neutral-900">
+  <div class="min-h-screen bg-gray-50 dark:bg-neutral-900">
     <UiEnvironmentBanner class="fixed top-0" :Banner="environmentBanner" />
     <NuxtLayout />
   </div>

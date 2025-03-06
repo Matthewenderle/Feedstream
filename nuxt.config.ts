@@ -3,7 +3,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  css: ['~/assets/css/main.scss'],
   compatibilityDate: '2024-11-01',
+  srcDir: 'app/',
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
@@ -49,6 +51,30 @@ export default defineNuxtConfig({
       emailSMTPPassword: process.env.EMAIL_PASS,
       emailSMTPHost: process.env.EMAIL_HOST,
       emailSMTPPort: process.env.EMAIL_PORT || '587',
+    },
+  },
+  supabase: {
+    url: process.env.ENV === 'development' ? process.env.SUPABASE_URL_DEV : process.env.SUPABASE_URL,
+    key: process.env.ENV === 'development' ? process.env.SUPABASE_KEY_DEV : process.env.SUPABASE_KEY,
+    redirect: false,
+    redirectOptions: {
+      login: '/',
+      callback: '/checkLogin',
+      exclude: [
+        '/',
+        '/register',
+        '/privacy-policy',
+        '/checkLogin',
+        '/changelog',
+        '/terms-of-service',
+        '/forgot-password',
+        '/reset-password**',
+        '/contact',
+        '/maintenance-mode',
+        '/feature**',
+        '/roadmap**',
+        '/changelog**',
+      ],
     },
   },
 });
